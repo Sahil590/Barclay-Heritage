@@ -5,7 +5,9 @@
 #    pip-compile --extra=dev --output-file=dev-requirements.txt
 #
 asgiref==3.8.1
-    # via django
+    # via
+    #   django
+    #   django-stubs
 attrs==24.3.0
     # via pytest-mypy
 build==1.2.1
@@ -27,6 +29,8 @@ django==5.2.2
     #   django-bootstrap5
     #   django-crispy-forms
     #   django-filter
+    #   django-stubs
+    #   django-stubs-ext
     #   django-tables2
 django-bootstrap5==25.1
     # via barclay-heritage (pyproject.toml)
@@ -36,6 +40,10 @@ django-crispy-forms==2.4
     #   crispy-bootstrap5
 django-filter==25.1
     # via barclay-heritage (pyproject.toml)
+django-stubs==5.2.0
+    # via barclay-heritage (pyproject.toml)
+django-stubs-ext==5.2.0
+    # via django-stubs
 django-tables2==2.7.5
     # via barclay-heritage (pyproject.toml)
 filelock==3.18.0
@@ -94,8 +102,13 @@ ruff==0.11.13
     # via barclay-heritage (pyproject.toml)
 sqlparse==0.5.3
     # via django
+types-pyyaml==6.0.12.20250516
+    # via django-stubs
 typing-extensions==4.13.2
-    # via mypy
+    # via
+    #   django-stubs
+    #   django-stubs-ext
+    #   mypy
 virtualenv==20.28.0
     # via pre-commit
 wheel==0.45.1

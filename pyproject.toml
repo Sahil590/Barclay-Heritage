@@ -31,7 +31,8 @@ dev = [
     "pytest-cov",
     "pytest-mypy",
     "pytest-mock",
-    "whitenoise"
+    "whitenoise",
+    "django-stubs"
 ]
 
 [tool.mypy]
