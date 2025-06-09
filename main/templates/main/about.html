@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block title %}About Us - Barclay Heritage{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">About Barclay Heritage</h1>
+                <p class="lead">Dedicated to preserving history and heritage for future generations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Content -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <h2 class="mb-4">Our Story</h2>
+                <p class="lead">Founded with a passion for preserving our cultural heritage, Barclay Heritage has been at the forefront of historical conservation for over two decades.</p>
+                <p>Our team of dedicated professionals combines traditional preservation techniques with modern technology to ensure that historical sites and artifacts are maintained for future generations to appreciate and learn from.</p>
+                <p>We believe that understanding our past is crucial for building a better future, and we are committed to making heritage accessible to everyone.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Historical building" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <h2 class="mb-4">Our Mission</h2>
+                <p class="lead">To preserve, protect, and promote cultural heritage through expert consultation, innovative conservation techniques, and community engagement.</p>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Expert heritage consultation</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Professional documentation services</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Sustainable restoration practices</li>
+                    <li class="mb-2"><i class="fas fa-check text-primary me-2"></i> Community education programs</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                     alt="Heritage preservation" class="img-fluid rounded shadow">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section -->
+<section class="bg-light section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="mb-4">Our Team</h2>
+                <p class="lead">Meet the dedicated professionals behind Barclay Heritage</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Team member" class="rounded-circle mb-3" width="120" height="120" style="object-fit: cover;">
+                        <h5 class="card-title">James Barclay</h5>
+                        <p class="text-muted">Founder & Heritage Specialist</p>
+                        <p class="card-text">Over 25 years of experience in heritage conservation and historical preservation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b302?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Team member" class="rounded-circle mb-3" width="120" height="120" style="object-fit: cover;">
+                        <h5 class="card-title">Sarah Mitchell</h5>
+                        <p class="text-muted">Lead Conservator</p>
+                        <p class="card-text">Expert in artifact restoration and preservation techniques with a PhD in Conservation Science.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80" 
+                             alt="Team member" class="rounded-circle mb-3" width="120" height="120" style="object-fit: cover;">
+                        <h5 class="card-title">David Chen</h5>
+                        <p class="text-muted">Digital Archivist</p>
+                        <p class="card-text">Specializes in digital documentation and modern preservation technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock %}

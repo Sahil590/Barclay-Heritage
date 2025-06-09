@@ -1,0 +1,185 @@
+{% extends 'base.html' %}
+
+{% block title %}Gallery - Barclay Heritage{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">Our Gallery</h1>
+                <p class="lead">Showcasing our heritage conservation projects and discoveries</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Gallery -->
+<section class="section-padding">
+    <div class="container">
+        <!-- Filter Buttons -->
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All Projects</button>
+                <button class="btn btn-outline-primary me-2 mb-2" data-filter="restoration">Restoration</button>
+                <button class="btn btn-outline-primary me-2 mb-2" data-filter="documentation">Documentation</button>
+                <button class="btn btn-outline-primary me-2 mb-2" data-filter="research">Research</button>
+            </div>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="row g-4">
+            <!-- Restoration Projects -->
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Victorian Manor Restoration" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Victorian Manor Restoration</h5>
+                        <p class="card-text">Complete restoration of a 19th-century manor house, preserving original architectural details.</p>
+                        <span class="badge bg-primary">Restoration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Archaeological Documentation" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Archaeological Site Documentation</h5>
+                        <p class="card-text">3D scanning and digital preservation of ancient archaeological findings.</p>
+                        <span class="badge bg-success">Documentation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c50a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Church Restoration" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Historic Church Restoration</h5>
+                        <p class="card-text">Careful restoration of stained glass windows and stonework dating from the 15th century.</p>
+                        <span class="badge bg-primary">Restoration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="research">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Historical Research" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Historical Research Project</h5>
+                        <p class="card-text">In-depth archival research uncovering the history of a medieval settlement.</p>
+                        <span class="badge bg-warning">Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Artifact Documentation" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Artifact Documentation</h5>
+                        <p class="card-text">High-resolution photography and cataloging of historical artifacts.</p>
+                        <span class="badge bg-success">Documentation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Museum Conservation" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Museum Conservation</h5>
+                        <p class="card-text">Conservation of historical paintings and sculptures for museum display.</p>
+                        <span class="badge bg-primary">Restoration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1571816119107-8d465bb10ea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Digital Archive" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Archive Creation</h5>
+                        <p class="card-text">Creating comprehensive digital archives for historical document preservation.</p>
+                        <span class="badge bg-success">Documentation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="research">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Genealogical Research" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Genealogical Research</h5>
+                        <p class="card-text">Tracing family histories and connecting modern descendants with their heritage.</p>
+                        <span class="badge bg-warning">Research</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1518709414570-18adaade9adf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Historic Bridge" style="height: 250px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Historic Bridge Restoration</h5>
+                        <p class="card-text">Structural restoration of a 19th-century stone bridge while maintaining historical integrity.</p>
+                        <span class="badge bg-primary">Restoration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-light section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Have a Heritage Project?</h2>
+                <p class="lead mb-4">We'd love to help you preserve your piece of history.</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Discuss Your Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const filterButtons = document.querySelectorAll('[data-filter]');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const filter = this.getAttribute('data-filter');
+            
+            // Update active button
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Filter items
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock %}

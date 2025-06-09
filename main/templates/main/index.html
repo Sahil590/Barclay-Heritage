@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Barclay Heritage{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">Welcome to Barclay Heritage</h1>
+                <p class="lead mb-4">Preserving the past, building the future. Discover our rich heritage and commitment to excellence.</p>
+                <a href="{% url 'about' %}" class="btn btn-light btn-lg me-3">Learn More</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">Get In Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Overview -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="mb-4">Our Services</h2>
+                <p class="lead">We offer a comprehensive range of heritage and consultation services.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-landmark fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Heritage Consultation</h5>
+                        <p class="card-text">Expert advice on historical preservation and heritage management.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-camera fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Documentation</h5>
+                        <p class="card-text">Professional documentation and archival services for historical sites.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <i class="fas fa-tools fa-3x text-primary"></i>
+                        </div>
+                        <h5 class="card-title">Restoration</h5>
+                        <p class="card-text">Careful restoration services that respect historical integrity.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="bg-light section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Ready to Work With Us?</h2>
+                <p class="lead mb-4">Let's discuss how we can help preserve your heritage for future generations.</p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us Today</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+{% endblock %}

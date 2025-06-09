@@ -1,0 +1,200 @@
+{% extends 'base.html' %}
+
+{% block title %}Blog - Barclay Heritage{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="hero-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h1 class="display-4 mb-4">Heritage Blog</h1>
+                <p class="lead">Insights, discoveries, and stories from the world of heritage conservation</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Featured Post -->
+            <div class="col-12">
+                <div class="card mb-5 shadow">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                                 class="img-fluid h-100" alt="Featured post" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body h-100 d-flex flex-column">
+                                <span class="badge bg-primary mb-2 align-self-start">Featured</span>
+                                <h3 class="card-title">The Art of Victorian Architecture Restoration</h3>
+                                <p class="card-text flex-grow-1">Discover the intricate process of restoring Victorian-era buildings while preserving their historical authenticity. Learn about the challenges we face and the innovative solutions we employ.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-auto">
+                                    <small class="text-muted">June 5, 2025 • 8 min read</small>
+                                    <a href="#" class="btn btn-outline-primary">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Digital preservation" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-success mb-2 align-self-start">Technology</span>
+                        <h5 class="card-title">Digital Preservation in the Modern Age</h5>
+                        <p class="card-text flex-grow-1">How 3D scanning and digital archiving are revolutionizing heritage preservation, making historical sites accessible for future generations.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">June 2, 2025 • 6 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Archaeological discovery" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-warning mb-2 align-self-start">Discovery</span>
+                        <h5 class="card-title">Uncovering Medieval Treasures</h5>
+                        <p class="card-text flex-grow-1">A fascinating account of our recent archaeological discovery that shed new light on medieval life in the region.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">May 28, 2025 • 5 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1520637736862-4d197d17c50a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Conservation techniques" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-info mb-2 align-self-start">Techniques</span>
+                        <h5 class="card-title">Traditional vs Modern Conservation</h5>
+                        <p class="card-text flex-grow-1">Exploring the balance between time-tested conservation methods and cutting-edge scientific approaches.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">May 25, 2025 • 7 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 4 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Community engagement" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-secondary mb-2 align-self-start">Community</span>
+                        <h5 class="card-title">Engaging Communities in Heritage</h5>
+                        <p class="card-text flex-grow-1">The importance of community involvement in heritage preservation and how we foster local engagement.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">May 20, 2025 • 4 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 5 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Museum conservation" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-danger mb-2 align-self-start">Case Study</span>
+                        <h5 class="card-title">Museum Conservation Success Story</h5>
+                        <p class="card-text flex-grow-1">A detailed look at our recent museum conservation project and the challenges we overcame.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">May 15, 2025 • 9 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Post 6 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                         class="card-img-top" alt="Research methods" style="height: 200px; object-fit: cover;">
+                    <div class="card-body d-flex flex-column">
+                        <span class="badge bg-dark mb-2 align-self-start">Research</span>
+                        <h5 class="card-title">Advanced Research Methodologies</h5>
+                        <p class="card-text flex-grow-1">Exploring innovative research techniques that help us uncover hidden histories and validate our findings.</p>
+                        <div class="mt-auto">
+                            <small class="text-muted">May 10, 2025 • 6 min read</small>
+                            <div class="mt-2">
+                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <nav aria-label="Blog pagination">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter Subscription -->
+<section class="bg-light section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <h2 class="mb-4">Stay Updated</h2>
+                <p class="lead mb-4">Subscribe to our newsletter for the latest heritage conservation insights and project updates.</p>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email address">
+                            <button class="btn btn-primary" type="button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
