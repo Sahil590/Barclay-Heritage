@@ -26,7 +26,7 @@ django-filter==25.1
     # via barclay-heritage (pyproject.toml)
 django-tables2==2.7.5
     # via barclay-heritage (pyproject.toml)
-huey==2.5.3
+pillow==11.2.1
     # via barclay-heritage (pyproject.toml)
 sqlparse==0.5.3
     # via django

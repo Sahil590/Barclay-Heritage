@@ -11,14 +11,15 @@ version = "0.0.1"
 authors = [
     { name = "Sahil Raja", email = "sahilraja100@gmail.com" }]
 requires-python = ">=3.13"
-dependencies = [   
+dependencies = [
     "django",
     "django-bootstrap5",
     "django-crispy-forms",
     "whitenoise",
     "crispy-bootstrap5",
     "django_tables2",
-    "django-filter"]
+    "django-filter",
+    "pillow"]
 
 [project.optional-dependencies]
 dev = [
@@ -35,12 +36,13 @@ dev = [
 ]
 
 [tool.mypy]
+plugins = ["mypy_django_plugin.main"]
 disallow_any_explicit = true
 disallow_any_generics = true
 warn_unreachable = true
 warn_unused_ignores = true
 disallow_untyped_defs = true
-exclude = [".venv/"]
+exclude = [".venv/", "docs/", "main/migrations/"]
 
 [[tool.mypy.overrides]]
 module = "tests.*"
