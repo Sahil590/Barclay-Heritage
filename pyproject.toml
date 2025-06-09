@@ -18,8 +18,7 @@ dependencies = [
     "whitenoise",
     "crispy-bootstrap5",
     "django_tables2",
-    "django-filter",
-    "huey"]
+    "django-filter"]
 
 [project.optional-dependencies]
 dev = [
