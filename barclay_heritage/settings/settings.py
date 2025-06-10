@@ -128,24 +128,8 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
-# INSTALLED_APPS += ["huey.contrib.djhuey"]
 
-# # The below Huey configuration is suitable for use in production but you could also
-# # consider having deployment specific settings if relevant.
-
-# # Note that when immediate mode is set pretty much all of the
-# other settings are ignored
-# # and execution is carried out in the main process and not in the background. You
-# # usually do want immediate mode in development but may not be if you
-# have particularly
-# # slow tasks. Note that if you disable immediate mode in development you'll need to
-# # launch Huey consumers in order for tasks to be executed.
-
-# # You should consult the Huey documentation to help select an appropriate value for
-# # "worker_type" (https://huey.readthedocs.io/en/latest/consumer.html#worker-types)".
-# HUEY = dict(
-#     huey_class="huey.SqliteHuey",
-#     immediate=DEBUG,
-#     consumer=dict(workers=2, worker_type="process"),
-#     connection=dict(filename=BASE_DIR / "db" / "hueydb.sqlite3"),
-# )
+# Static files configuration
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
