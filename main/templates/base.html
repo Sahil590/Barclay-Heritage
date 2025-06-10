@@ -1,55 +1,83 @@
+{% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="lux">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Barclay Heritage{% endblock %}</title>
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootswatch Theme CSS (Default: Lux) -->
+    <link id="theme-css" href="https://bootswatch.com/5/lux/bootstrap.min.css" rel="stylesheet">
     
-    <!-- Custom CSS -->
+    <!-- Custom Theme CSS -->
+    <link rel="stylesheet" href="{% static 'css/themes.css' %}">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
-        .hero-section {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
-            padding: 100px 0;
+        body {
+            font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8f9fa;
+            line-height: 1.6;
         }
         
         .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
+            font-weight: 700;
+            font-size: 1.75rem;
+            letter-spacing: -0.5px;
         }
         
-        .footer {
-            background-color: #2c3e50;
-            color: white;
-            padding: 40px 0;
-            margin-top: auto;
-        }
-        
-        body {
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        
-        main {
-            flex: 1;
-        }
-        
+        /* Enhanced styles for better visual appeal */
         .section-padding {
-            padding: 60px 0;
+            padding: 4rem 0;
         }
         
-        .card {
-            border: none;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+        .display-4 {
+            font-weight: 700;
+            letter-spacing: -1px;
         }
         
-        .card:hover {
-            transform: translateY(-5px);
+        .lead {
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+        
+        /* Car-specific styles (keeping existing functionality) */
+        .car-card {
+            margin-bottom: 2rem;
+        }
+        
+        .car-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .car-price {
+            color: var(--bs-danger);
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        
+        .car-features {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .feature-badge {
+            background-color: var(--bs-light);
+            color: var(--bs-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
         }
     </style>
     
@@ -57,14 +85,12 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'index' %}">Barclay Heritage</a>
-            
+            <a class="navbar-brand" href="/">Barclay Heritage</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
@@ -85,6 +111,31 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'contact' %}">Contact</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-palette"></i> Theme
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="themeDropdown">
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="lux" data-name="Lux">
+                                <i class="fas fa-crown"></i> Lux (Elegant)
+                            </a></li>
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="darkly" data-name="Darkly">
+                                <i class="fas fa-moon"></i> Darkly (Dark)
+                            </a></li>
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="flatly" data-name="Flatly">
+                                <i class="fas fa-layer-group"></i> Flatly (Modern)
+                            </a></li>
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="superhero" data-name="Superhero">
+                                <i class="fas fa-bolt"></i> Superhero (Bold)
+                            </a></li>
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="slate" data-name="Slate">
+                                <i class="fas fa-mountain"></i> Slate (Professional)
+                            </a></li>
+                            <li><a class="dropdown-item theme-option" href="#" data-theme="cyborg" data-name="Cyborg">
+                                <i class="fas fa-robot"></i> Cyborg (Electric)
+                            </a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -101,25 +152,22 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>Barclay Heritage</h5>
-                    <p>Preserving history, building the future.</p>
+                    <p>Preserving automotive history</p>
                 </div>
-                <div class="col-md-6">
-                    <h5>Contact Info</h5>
+                <div class="col-md-6 text-md-end">
+                    <h5>Contact</h5>
                     <p>Email: info@barclayheritage.com<br>
                     Phone: (555) 123-4567</p>
-                </div>
-            </div>
-            <hr class="my-4">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; {% now "Y" %} Barclay Heritage. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
+    <!-- Theme Switcher JavaScript -->
+    <script src="{% static 'js/theme-switcher.js' %}"></script>
     
     {% block extra_js %}{% endblock %}
 </body>

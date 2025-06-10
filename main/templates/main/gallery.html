@@ -3,138 +3,269 @@
 {% block title %}Gallery - Barclay Heritage{% endblock %}
 
 {% block content %}
-<!-- Page Header -->
+<!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4 mb-4">Our Gallery</h1>
-                <p class="lead">Showcasing our heritage conservation projects and discoveries</p>
+                <h1 class="display-4 mb-4">Heritage Gallery</h1>
+                <p class="lead">Explore our collection of restored classics and witness the artistry of automotive heritage preservation.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Gallery -->
-<section class="section-padding">
+<!-- Filter Tabs -->
+<section class="py-4 bg-light">
     <div class="container">
-        <!-- Filter Buttons -->
-        <div class="row mb-5">
-            <div class="col-12 text-center">
-                <button class="btn btn-outline-primary active me-2 mb-2" data-filter="all">All Projects</button>
-                <button class="btn btn-outline-primary me-2 mb-2" data-filter="restoration">Restoration</button>
-                <button class="btn btn-outline-primary me-2 mb-2" data-filter="documentation">Documentation</button>
-                <button class="btn btn-outline-primary me-2 mb-2" data-filter="research">Research</button>
+        <div class="row">
+            <div class="col-12">
+                <ul class="nav nav-pills justify-content-center" id="galleryTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="pill" data-bs-target="#all" type="button" role="tab">
+                            All Vehicles
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="sports-tab" data-bs-toggle="pill" data-bs-target="#sports" type="button" role="tab">
+                            Sports Cars
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="classic-tab" data-bs-toggle="pill" data-bs-target="#classic" type="button" role="tab">
+                            Classic Cars
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="luxury-tab" data-bs-toggle="pill" data-bs-target="#luxury" type="button" role="tab">
+                            Luxury
+                        </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="restoration-tab" data-bs-toggle="pill" data-bs-target="#restoration" type="button" role="tab">
+                            Restorations
+                        </button>
+                    </li>
+                </ul>
             </div>
         </div>
+    </div>
+</section>
 
-        <!-- Gallery Grid -->
-        <div class="row g-4">
-            <!-- Restoration Projects -->
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Victorian Manor Restoration" style="height: 250px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Victorian Manor Restoration</h5>
-                        <p class="card-text">Complete restoration of a 19th-century manor house, preserving original architectural details.</p>
-                        <span class="badge bg-primary">Restoration</span>
+<!-- Gallery Content -->
+<section class="section-padding">
+    <div class="container">
+        <div class="tab-content" id="galleryTabsContent">
+            <!-- All Vehicles Tab -->
+            <div class="tab-pane fade show active" id="all" role="tabpanel">
+                <div class="row g-4">
+                    <!-- Vehicle 1 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/2c3e50/ffffff?text=1967+Ferrari+275" class="card-img-top" alt="1967 Ferrari 275 GTB">
+                            <div class="card-body">
+                                <h5 class="card-title">1967 Ferrari 275 GTB</h5>
+                                <p class="text-muted mb-2">Sports Car • Complete Restoration</p>
+                                <p class="card-text">Concours-quality restoration of this iconic Ferrari, featuring matching numbers engine and transmission.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">Matching Numbers</span>
+                                    <span class="feature-badge">Concours Winner</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2023</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal1">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vehicle 2 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/34495e/ffffff?text=1969+Camaro+Z28" class="card-img-top" alt="1969 Camaro Z/28">
+                            <div class="card-body">
+                                <h5 class="card-title">1969 Camaro Z/28</h5>
+                                <p class="text-muted mb-2">Muscle Car • Frame-Off Restoration</p>
+                                <p class="card-text">Complete frame-off restoration of this rare Z/28, returned to factory specifications with period-correct components.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">Frame-Off</span>
+                                    <span class="feature-badge">Numbers Matching</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2024</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal2">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vehicle 3 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/e74c3c/ffffff?text=1955+Mercedes+300SL" class="card-img-top" alt="1955 Mercedes 300SL">
+                            <div class="card-body">
+                                <h5 class="card-title">1955 Mercedes 300SL</h5>
+                                <p class="text-muted mb-2">Classic Sports • Gullwing Coupe</p>
+                                <p class="card-text">Meticulous restoration of this legendary gullwing, preserving its original character while enhancing reliability.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">Gullwing</span>
+                                    <span class="feature-badge">Rare</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2023</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal3">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vehicle 4 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/27ae60/ffffff?text=1963+Jaguar+E-Type" class="card-img-top" alt="1963 Jaguar E-Type">
+                            <div class="card-body">
+                                <h5 class="card-title">1963 Jaguar E-Type</h5>
+                                <p class="text-muted mb-2">British Sports • Series 1</p>
+                                <p class="card-text">Beautiful Series 1 E-Type restoration maintaining the car's original elegance and performance character.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">Series 1</span>
+                                    <span class="feature-badge">Wire Wheels</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2024</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal4">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vehicle 5 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/8e44ad/ffffff?text=1970+Plymouth+Barracuda" class="card-img-top" alt="1970 Plymouth Barracuda">
+                            <div class="card-body">
+                                <h5 class="card-title">1970 Plymouth 'Cuda</h5>
+                                <p class="text-muted mb-2">Muscle Car • 440 Six Pack</p>
+                                <p class="card-text">High-performance 'Cuda with the legendary 440 Six Pack engine, restored to concours standards.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">440 Six Pack</span>
+                                    <span class="feature-badge">4-Speed</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2023</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal5">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Vehicle 6 -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card car-card">
+                            <img src="https://via.placeholder.com/400x300/16a085/ffffff?text=1958+Porsche+356" class="card-img-top" alt="1958 Porsche 356">
+                            <div class="card-body">
+                                <h5 class="card-title">1958 Porsche 356A</h5>
+                                <p class="text-muted mb-2">Sports Car • Speedster</p>
+                                <p class="card-text">Iconic 356 Speedster restoration with attention to every detail, from engine to interior trim.</p>
+                                <div class="car-features">
+                                    <span class="feature-badge">Speedster</span>
+                                    <span class="feature-badge">Documented</span>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <small class="text-muted">Completed 2024</small>
+                                    <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#vehicleModal6">
+                                        View Details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Archaeological Documentation" style="height: 250px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Archaeological Site Documentation</h5>
-                        <p class="card-text">3D scanning and digital preservation of ancient archaeological findings.</p>
-                        <span class="badge bg-success">Documentation</span>
+            
+            <!-- Other tabs would contain filtered content -->
+            <div class="tab-pane fade" id="sports" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12 text-center">
+                        <p class="lead">Sports car collection coming soon...</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c50a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Church Restoration" style="height: 250px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Historic Church Restoration</h5>
-                        <p class="card-text">Careful restoration of stained glass windows and stonework dating from the 15th century.</p>
-                        <span class="badge bg-primary">Restoration</span>
+            
+            <div class="tab-pane fade" id="classic" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12 text-center">
+                        <p class="lead">Classic car collection coming soon...</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="research">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Historical Research" style="height: 250px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Historical Research Project</h5>
-                        <p class="card-text">In-depth archival research uncovering the history of a medieval settlement.</p>
-                        <span class="badge bg-warning">Research</span>
+            
+            <div class="tab-pane fade" id="luxury" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12 text-center">
+                        <p class="lead">Luxury car collection coming soon...</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Artifact Documentation" style="height: 250px; object-fit: cover;">
-                    <div class="card-body">
-                        <h5 class="card-title">Artifact Documentation</h5>
-                        <p class="card-text">High-resolution photography and cataloging of historical artifacts.</p>
-                        <span class="badge bg-success">Documentation</span>
+            
+            <div class="tab-pane fade" id="restoration" role="tabpanel">
+                <div class="row g-4">
+                    <div class="col-12 text-center">
+                        <p class="lead">Restoration showcase coming soon...</p>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
 
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Museum Conservation" style="height: 250px; object-fit: cover;">
+<!-- Statistics -->
+<section class="bg-light section-padding">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 bg-transparent">
                     <div class="card-body">
-                        <h5 class="card-title">Museum Conservation</h5>
-                        <p class="card-text">Conservation of historical paintings and sculptures for museum display.</p>
-                        <span class="badge bg-primary">Restoration</span>
+                        <i class="fas fa-car fa-3x text-primary mb-3"></i>
+                        <h3 class="display-6 fw-bold">150+</h3>
+                        <p class="lead">Vehicles Restored</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="documentation">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1571816119107-8d465bb10ea4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Digital Archive" style="height: 250px; object-fit: cover;">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 bg-transparent">
                     <div class="card-body">
-                        <h5 class="card-title">Digital Archive Creation</h5>
-                        <p class="card-text">Creating comprehensive digital archives for historical document preservation.</p>
-                        <span class="badge bg-success">Documentation</span>
+                        <i class="fas fa-trophy fa-3x text-primary mb-3"></i>
+                        <h3 class="display-6 fw-bold">50+</h3>
+                        <p class="lead">Concours Winners</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="research">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Genealogical Research" style="height: 250px; object-fit: cover;">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 bg-transparent">
                     <div class="card-body">
-                        <h5 class="card-title">Genealogical Research</h5>
-                        <p class="card-text">Tracing family histories and connecting modern descendants with their heritage.</p>
-                        <span class="badge bg-warning">Research</span>
+                        <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                        <h3 class="display-6 fw-bold">25+</h3>
+                        <p class="lead">Years Experience</p>
                     </div>
                 </div>
             </div>
-
-            <div class="col-lg-4 col-md-6 gallery-item" data-category="restoration">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1518709414570-18adaade9adf?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Historic Bridge" style="height: 250px; object-fit: cover;">
+            <div class="col-md-3 mb-4">
+                <div class="card border-0 bg-transparent">
                     <div class="card-body">
-                        <h5 class="card-title">Historic Bridge Restoration</h5>
-                        <p class="card-text">Structural restoration of a 19th-century stone bridge while maintaining historical integrity.</p>
-                        <span class="badge bg-primary">Restoration</span>
+                        <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                        <h3 class="display-6 fw-bold">500+</h3>
+                        <p class="lead">Happy Clients</p>
                     </div>
                 </div>
             </div>
@@ -143,43 +274,54 @@
 </section>
 
 <!-- Call to Action -->
-<section class="bg-light section-padding">
+<section class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Have a Heritage Project?</h2>
-                <p class="lead mb-4">We'd love to help you preserve your piece of history.</p>
-                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Discuss Your Project</a>
+                <h2 class="mb-4">Have a Classic That Needs Attention?</h2>
+                <p class="lead mb-4">Let us help you preserve your automotive heritage with our expert restoration and documentation services.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-tools me-2"></i>Start Your Project
+                    </a>
+                    <a href="{% url 'services' %}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>View Services
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-{% endblock %}
 
-{% block extra_js %}
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('[data-filter]');
-    const galleryItems = document.querySelectorAll('.gallery-item');
+<!-- Vehicle Detail Modals -->
+<!-- Modal 1 -->
+<div class="modal fade" id="vehicleModal1" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">1967 Ferrari 275 GTB</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <img src="https://via.placeholder.com/700x400/2c3e50/ffffff?text=1967+Ferrari+275+GTB" class="img-fluid mb-3" alt="Ferrari 275 GTB">
+                <h6>Restoration Details</h6>
+                <p>This stunning 1967 Ferrari 275 GTB underwent a complete concours-quality restoration over 18 months. Every component was carefully refurbished or replaced with period-correct parts.</p>
+                <ul>
+                    <li>Matching numbers V12 engine rebuilt to factory specifications</li>
+                    <li>Original 5-speed transaxle fully restored</li>
+                    <li>Body stripped to bare metal and repainted in original Rosso Corsa</li>
+                    <li>Interior reupholstered in period-correct black leather</li>
+                    <li>All chrome and brightwork restored or replaced</li>
+                </ul>
+                <p><strong>Awards:</strong> Best in Class at Concours d'Elegance 2023</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <a href="{% url 'contact' %}" class="btn btn-primary">Inquire About Similar Project</a>
+            </div>
+        </div>
+    </div>
+</div>
 
-    filterButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            const filter = this.getAttribute('data-filter');
-            
-            // Update active button
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            // Filter items
-            galleryItems.forEach(item => {
-                if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                    item.style.display = 'block';
-                } else {
-                    item.style.display = 'none';
-                }
-            });
-        });
-    });
-});
-</script>
+<!-- Additional modals would follow the same pattern -->
 {% endblock %}

@@ -3,171 +3,207 @@
 {% block title %}Blog - Barclay Heritage{% endblock %}
 
 {% block content %}
-<!-- Page Header -->
+<!-- Hero Section -->
 <section class="hero-section">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4 mb-4">Heritage Blog</h1>
-                <p class="lead">Insights, discoveries, and stories from the world of heritage conservation</p>
+                <h1 class="display-4 mb-4">Heritage Stories</h1>
+                <p class="lead">Discover the stories, insights, and expertise from our world of classic automotive preservation.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Blog Posts -->
+<!-- Featured Article -->
 <section class="section-padding">
     <div class="container">
-        <div class="row g-4">
-            <!-- Featured Post -->
-            <div class="col-12">
-                <div class="card mb-5 shadow">
-                    <div class="row g-0">
-                        <div class="col-md-6">
-                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                                 class="img-fluid h-100" alt="Featured post" style="object-fit: cover;">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card mb-5 border-0 shadow-lg">
+                    <img src="https://via.placeholder.com/800x400/2c3e50/ffffff?text=Featured+Article" class="card-img-top" alt="Featured Article">
+                    <div class="card-body p-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary me-2">Featured</span>
+                            <small class="text-muted">December 15, 2024</small>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card-body h-100 d-flex flex-column">
-                                <span class="badge bg-primary mb-2 align-self-start">Featured</span>
-                                <h3 class="card-title">The Art of Victorian Architecture Restoration</h3>
-                                <p class="card-text flex-grow-1">Discover the intricate process of restoring Victorian-era buildings while preserving their historical authenticity. Learn about the challenges we face and the innovative solutions we employ.</p>
-                                <div class="d-flex justify-content-between align-items-center mt-auto">
-                                    <small class="text-muted">June 5, 2025 • 8 min read</small>
-                                    <a href="#" class="btn btn-outline-primary">Read More</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 1 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1481026469463-66327c86e544?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Digital preservation" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-success mb-2 align-self-start">Technology</span>
-                        <h5 class="card-title">Digital Preservation in the Modern Age</h5>
-                        <p class="card-text flex-grow-1">How 3D scanning and digital archiving are revolutionizing heritage preservation, making historical sites accessible for future generations.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">June 2, 2025 • 6 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 2 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1580674684081-7617fbf3d745?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Archaeological discovery" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-warning mb-2 align-self-start">Discovery</span>
-                        <h5 class="card-title">Uncovering Medieval Treasures</h5>
-                        <p class="card-text flex-grow-1">A fascinating account of our recent archaeological discovery that shed new light on medieval life in the region.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">May 28, 2025 • 5 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1520637736862-4d197d17c50a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Conservation techniques" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-info mb-2 align-self-start">Techniques</span>
-                        <h5 class="card-title">Traditional vs Modern Conservation</h5>
-                        <p class="card-text flex-grow-1">Exploring the balance between time-tested conservation methods and cutting-edge scientific approaches.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">May 25, 2025 • 7 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 4 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Community engagement" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-secondary mb-2 align-self-start">Community</span>
-                        <h5 class="card-title">Engaging Communities in Heritage</h5>
-                        <p class="card-text flex-grow-1">The importance of community involvement in heritage preservation and how we foster local engagement.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">May 20, 2025 • 4 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Museum conservation" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-danger mb-2 align-self-start">Case Study</span>
-                        <h5 class="card-title">Museum Conservation Success Story</h5>
-                        <p class="card-text flex-grow-1">A detailed look at our recent museum conservation project and the challenges we overcame.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">May 15, 2025 • 9 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Blog Post 6 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100">
-                    <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                         class="card-img-top" alt="Research methods" style="height: 200px; object-fit: cover;">
-                    <div class="card-body d-flex flex-column">
-                        <span class="badge bg-dark mb-2 align-self-start">Research</span>
-                        <h5 class="card-title">Advanced Research Methodologies</h5>
-                        <p class="card-text flex-grow-1">Exploring innovative research techniques that help us uncover hidden histories and validate our findings.</p>
-                        <div class="mt-auto">
-                            <small class="text-muted">May 10, 2025 • 6 min read</small>
-                            <div class="mt-2">
-                                <a href="#" class="btn btn-outline-primary btn-sm">Read More</a>
-                            </div>
-                        </div>
+                        <h2 class="card-title">The Art of Concours-Quality Restoration</h2>
+                        <p class="lead">What it takes to achieve the highest standards in classic car restoration, from initial assessment to final presentation.</p>
+                        <p class="card-text">In the world of classic car restoration, achieving concours quality represents the pinnacle of craftsmanship and attention to detail. This comprehensive guide explores the meticulous process, specialized techniques, and unwavering dedication required to transform a classic vehicle into a show-winning masterpiece...</p>
+                        <a href="#" class="btn btn-primary">Read Full Article</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
+<!-- Blog Categories -->
+<section class="bg-light py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="d-flex justify-content-center flex-wrap gap-2">
+                    <button class="btn btn-outline-primary active" data-category="all">All Posts</button>
+                    <button class="btn btn-outline-primary" data-category="restoration">Restoration</button>
+                    <button class="btn btn-outline-primary" data-category="history">History</button>
+                    <button class="btn btn-outline-primary" data-category="tips">Tips & Advice</button>
+                    <button class="btn btn-outline-primary" data-category="events">Events</button>
+                    <button class="btn btn-outline-primary" data-category="market">Market Insights</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Blog Posts Grid -->
+<section class="section-padding">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Blog Post 1 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/34495e/ffffff?text=Engine+Rebuild" class="card-img-top" alt="Engine Rebuild">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-success me-2">Restoration</span>
+                            <small class="text-muted">December 10, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Rebuilding a Ferrari V12: A Master Class in Precision</a>
+                        </h5>
+                        <p class="card-text">Join us as we take you through the intricate process of rebuilding a 1960s Ferrari V12 engine, showcasing the craftsmanship required for this legendary powerplant.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/2c3e50/ffffff?text=JB" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By James Barclay</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Blog Post 2 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Classic+Car+History" class="card-img-top" alt="Classic Car History">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-info me-2">History</span>
+                            <small class="text-muted">December 5, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">The Golden Age of American Muscle Cars</a>
+                        </h5>
+                        <p class="card-text">Exploring the cultural and technological factors that led to the birth of the American muscle car era and its lasting impact on automotive culture.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/34495e/ffffff?text=RC" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By Robert Chen</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Blog Post 3 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/27ae60/ffffff?text=Preservation+Tips" class="card-img-top" alt="Preservation Tips">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-warning me-2">Tips & Advice</span>
+                            <small class="text-muted">December 1, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Winter Storage: Protecting Your Classic Investment</a>
+                        </h5>
+                        <p class="card-text">Essential tips for properly storing your classic car during winter months to prevent damage and maintain its condition year-round.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/e74c3c/ffffff?text=SM" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By Sarah Mitchell</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Blog Post 4 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/8e44ad/ffffff?text=Car+Show+Event" class="card-img-top" alt="Car Show Event">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-danger me-2">Events</span>
+                            <small class="text-muted">November 25, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Highlights from the 2024 Pebble Beach Concours</a>
+                        </h5>
+                        <p class="card-text">A recap of the most prestigious classic car event of the year, featuring stunning restorations and rare automotive gems.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/2c3e50/ffffff?text=JB" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By James Barclay</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Blog Post 5 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/16a085/ffffff?text=Market+Analysis" class="card-img-top" alt="Market Analysis">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-secondary me-2">Market Insights</span>
+                            <small class="text-muted">November 20, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">Classic Car Market Trends: What to Watch in 2025</a>
+                        </h5>
+                        <p class="card-text">An analysis of current market trends and predictions for the classic car market in the coming year, helping collectors make informed decisions.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/34495e/ffffff?text=RC" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By Robert Chen</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            
+            <!-- Blog Post 6 -->
+            <div class="col-lg-4 col-md-6">
+                <article class="card h-100">
+                    <img src="https://via.placeholder.com/400x250/f39c12/ffffff?text=Restoration+Process" class="card-img-top" alt="Restoration Process">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-2">
+                            <span class="badge bg-success me-2">Restoration</span>
+                            <small class="text-muted">November 15, 2024</small>
+                        </div>
+                        <h5 class="card-title">
+                            <a href="#" class="text-decoration-none">From Barn Find to Concours Winner: A Complete Journey</a>
+                        </h5>
+                        <p class="card-text">Follow the complete transformation of a neglected barn find into a show-winning classic, documenting every step of the restoration process.</p>
+                        <div class="d-flex align-items-center">
+                            <img src="https://via.placeholder.com/40x40/e74c3c/ffffff?text=SM" class="rounded-circle me-2" alt="Author">
+                            <small class="text-muted">By Sarah Mitchell</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+        
         <!-- Pagination -->
         <div class="row mt-5">
             <div class="col-12">
                 <nav aria-label="Blog pagination">
                     <ul class="pagination justify-content-center">
                         <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                            <a class="page-link" href="#" tabindex="-1">Previous</a>
                         </li>
-                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
                         <li class="page-item">
                             <a class="page-link" href="#">Next</a>
                         </li>
@@ -178,23 +214,94 @@
     </div>
 </section>
 
-<!-- Newsletter Subscription -->
-<section class="bg-light section-padding">
+<!-- Newsletter Signup -->
+<section class="bg-primary text-white section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Stay Updated</h2>
-                <p class="lead mb-4">Subscribe to our newsletter for the latest heritage conservation insights and project updates.</p>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <div class="input-group">
-                            <input type="email" class="form-control" placeholder="Enter your email address">
-                            <button class="btn btn-primary" type="button">Subscribe</button>
-                        </div>
+                <h2 class="mb-4">Stay Updated with Heritage Stories</h2>
+                <p class="lead mb-4">Subscribe to our newsletter for the latest articles, restoration updates, and classic car insights.</p>
+                <form class="row g-3 justify-content-center">
+                    <div class="col-auto">
+                        <label for="newsletter-email" class="visually-hidden">Email</label>
+                        <input type="email" class="form-control form-control-lg" id="newsletter-email" placeholder="Enter your email">
                     </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-light btn-lg">
+                            <i class="fas fa-envelope me-2"></i>Subscribe
+                        </button>
+                    </div>
+                </form>
+                <small class="d-block mt-3 opacity-75">We respect your privacy. Unsubscribe at any time.</small>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Recent Comments/Community -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <h2 class="text-center mb-5">Join the Heritage Community</h2>
+                <div class="row g-4">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-users fa-3x text-primary mb-3"></i>
+                        <h5>Connect with Enthusiasts</h5>
+                        <p class="text-muted">Join our community of classic car enthusiasts and share your passion for automotive heritage.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-share-alt fa-3x text-primary mb-3"></i>
+                        <h5>Share Your Stories</h5>
+                        <p class="text-muted">Have a classic car story to tell? We'd love to feature your heritage journey on our blog.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-lightbulb fa-3x text-primary mb-3"></i>
+                        <h5>Expert Advice</h5>
+                        <p class="text-muted">Get expert advice and tips from our experienced restoration team and heritage specialists.</p>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Get in Touch
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+{% block extra_js %}
+<script>
+// Simple blog category filtering
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('[data-category]');
+    const blogPosts = document.querySelectorAll('.card');
+    
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            // Update active button
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+            this.classList.add('active');
+            
+            const category = this.getAttribute('data-category');
+            
+            // Show/hide posts based on category
+            blogPosts.forEach(post => {
+                if (category === 'all') {
+                    post.style.display = 'block';
+                } else {
+                    const badge = post.querySelector('.badge');
+                    if (badge && badge.textContent.toLowerCase().includes(category)) {
+                        post.style.display = 'block';
+                    } else {
+                        post.style.display = 'none';
+                    }
+                }
+            });
+        });
+    });
+});
+</script>
+{% endblock %}
 {% endblock %}

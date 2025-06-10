@@ -8,76 +8,162 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h1 class="display-4 mb-4">Welcome to Barclay Heritage</h1>
-                <p class="lead mb-4">Preserving the past, building the future. Discover our rich heritage and commitment to excellence.</p>
-                <a href="{% url 'about' %}" class="btn btn-light btn-lg me-3">Learn More</a>
-                <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">Get In Touch</a>
+                <h1 class="display-4 mb-4 slide-in-left">Welcome to Barclay Heritage</h1>
+                <p class="lead mb-4 slide-in-right">Preserving automotive history, one classic car at a time. Discover our collection of vintage automobiles and heritage services.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{% url 'about' %}" class="btn btn-light btn-lg">
+                        <i class="fas fa-info-circle me-2"></i>Learn More
+                    </a>
+                    <a href="{% url 'contact' %}" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-envelope me-2"></i>Get In Touch
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Services Overview -->
+<!-- Featured Services -->
 <section class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center mb-5">
-                <h2 class="mb-4">Our Services</h2>
-                <p class="lead">We offer a comprehensive range of heritage and consultation services.</p>
+                <h2 class="mb-4">Our Heritage Services</h2>
+                <p class="lead">Comprehensive automotive heritage solutions for collectors and enthusiasts.</p>
             </div>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-landmark fa-3x text-primary"></i>
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <i class="fas fa-car fa-4x text-primary"></i>
                         </div>
-                        <h5 class="card-title">Heritage Consultation</h5>
-                        <p class="card-text">Expert advice on historical preservation and heritage management.</p>
+                        <h5 class="card-title">Classic Car Collection</h5>
+                        <p class="card-text">Curated selection of vintage and classic automobiles, each with verified provenance and detailed history.</p>
+                        <a href="{% url 'gallery' %}" class="btn btn-primary">View Collection</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-camera fa-3x text-primary"></i>
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <i class="fas fa-tools fa-4x text-primary"></i>
                         </div>
-                        <h5 class="card-title">Documentation</h5>
-                        <p class="card-text">Professional documentation and archival services for historical sites.</p>
+                        <h5 class="card-title">Restoration Services</h5>
+                        <p class="card-text">Expert restoration and maintenance services preserving the authenticity and value of classic vehicles.</p>
+                        <a href="{% url 'services' %}" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body text-center">
-                        <div class="mb-3">
-                            <i class="fas fa-tools fa-3x text-primary"></i>
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <div class="mb-4">
+                            <i class="fas fa-certificate fa-4x text-primary"></i>
                         </div>
-                        <h5 class="card-title">Restoration</h5>
-                        <p class="card-text">Careful restoration services that respect historical integrity.</p>
+                        <h5 class="card-title">Authentication & Appraisal</h5>
+                        <p class="card-text">Professional authentication and appraisal services for insurance, sales, and collection purposes.</p>
+                        <a href="{% url 'services' %}" class="btn btn-primary">Get Appraisal</a>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Statistics Section -->
+<section class="bg-primary text-white section-padding">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-3 mb-4">
+                <h3 class="display-5 fw-bold">150+</h3>
+                <p class="lead">Classic Cars</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h3 class="display-5 fw-bold">25+</h3>
+                <p class="lead">Years Experience</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h3 class="display-5 fw-bold">500+</h3>
+                <p class="lead">Happy Clients</p>
+            </div>
+            <div class="col-md-3 mb-4">
+                <h3 class="display-5 fw-bold">50+</h3>
+                <p class="lead">Restorations</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Latest News/Blog -->
+<section class="section-padding bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center mb-5">
+                <h2 class="mb-4">Latest from Our Heritage</h2>
+                <p class="lead">Stay updated with the latest news, stories, and discoveries from the automotive heritage world.</p>
+            </div>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250/2c3e50/ffffff?text=Classic+Car" class="card-img-top" alt="Classic Car">
+                    <div class="card-body">
+                        <small class="text-muted">December 2024</small>
+                        <h5 class="card-title">Restoration of 1967 Mustang Fastback</h5>
+                        <p class="card-text">A detailed look at our latest restoration project, bringing a classic Mustang back to its original glory.</p>
+                        <a href="{% url 'blog' %}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250/34495e/ffffff?text=Heritage+Event" class="card-img-top" alt="Heritage Event">
+                    <div class="card-body">
+                        <small class="text-muted">November 2024</small>
+                        <h5 class="card-title">Annual Heritage Car Show</h5>
+                        <p class="card-text">Highlights from our annual car show featuring rare and beautiful classic automobiles from around the world.</p>
+                        <a href="{% url 'blog' %}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x250/e74c3c/ffffff?text=Preservation+Tips" class="card-img-top" alt="Preservation Tips">
+                    <div class="card-body">
+                        <small class="text-muted">October 2024</small>
+                        <h5 class="card-title">Classic Car Preservation Tips</h5>
+                        <p class="card-text">Expert advice on maintaining and preserving your classic car's value and condition for future generations.</p>
+                        <a href="{% url 'blog' %}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="{% url 'blog' %}" class="btn btn-primary btn-lg">View All Articles</a>
         </div>
     </div>
 </section>
 
 <!-- Call to Action -->
-<section class="bg-light section-padding">
+<section class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto text-center">
-                <h2 class="mb-4">Ready to Work With Us?</h2>
-                <p class="lead mb-4">Let's discuss how we can help preserve your heritage for future generations.</p>
-                <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">Contact Us Today</a>
+                <h2 class="mb-4">Ready to Preserve Your Heritage?</h2>
+                <p class="lead mb-4">Whether you're looking to buy, sell, restore, or authenticate a classic vehicle, we're here to help preserve automotive history.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="{% url 'contact' %}" class="btn btn-primary btn-lg">
+                        <i class="fas fa-phone me-2"></i>Contact Us Today
+                    </a>
+                    <a href="{% url 'gallery' %}" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-eye me-2"></i>View Our Collection
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
-{% endblock %}
-
-{% block extra_css %}
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 {% endblock %}
