@@ -90,7 +90,7 @@ pytest==8.4.0
     #   pytest-cov
     #   pytest-mock
     #   pytest-mypy
-pytest-cov==6.1.1
+pytest-cov==6.2.1
     # via barclay-heritage (pyproject.toml)
 pytest-mock==3.14.0
     # via barclay-heritage (pyproject.toml)
